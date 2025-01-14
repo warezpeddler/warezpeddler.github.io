@@ -1,0 +1,93 @@
+<html><head><style>body {
+    background-color: #393E41;
+    color: #E7E5DF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a, button {
+    color: #44BBA4;
+    text-decoration: none;
+}
+a:hover, button:hover {
+    text-decoration: underline;
+}
+h1, h2, h3 {
+    color: #44BBA4;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #393E41;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #44BBA4;
+    color: #393E41;
+    border: 1px solid #393E41;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+article {
+    background-color: #E7E5DF;
+    color: #393E41;
+    padding: 20px;
+    margin: 10px;
+    flex-grow: 1;
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    article {
+        padding: 10px;
+    }
+}</style><script>document.addEventListener('DOMContentLoaded', function() {
+    var homeButton = document.querySelector('nav ul li a[href="/index.html"]');
+    if (window.location.pathname === "/index.html") {
+        homeButton.style.display = "none";
+    } else {
+        homeButton.style.display = "block";
+    }
+});</script></head><body><nav><ul><li><a href="/index.html">Home</a></li><li><a href="/Posts/">Posts</a></li><li><a href="/Reviews/">Reviews</a></li><li><a href="/Book-Reviews/">Book Reviews</a></li></ul></nav><article><h1>Warezpeddlers Blog</h1>
+<h2>Whoami</h2>
+<ul>
+<li>Offensive Security @somewhere</li>
+<li>Just looking to give back a little</li>
+<li>Experienced in testing Azure, Active Directory, Network infrastructure, Kiosk Breakouts, Cyber/Physical Social Engineering.</li>
+<li>Currently developing skills in: Purple and Red Teaming, Capability Development, Adversarial Machine learning</li>
+</ul>
+<h2>Qualifications:</h2>
+<ul>
+<li>BSc in Cyber Security &amp; Computer Forensics</li>
+</ul>
+<h2>Interests outside of my field</h2>
+<ul>
+<li>Culture and History</li>
+<li>Geo-politics</li>
+<li>Reading (non technical and technical)</li>
+<li>Music (listening and playing)</li>
+<li>Running</li>
+<li>The odd Sc-Fi / Fantasy genre</li>
+<li>Travel</li>
+</ul><div class="latest-posts"><h4>Latest Posts</h4><ul><li><a href="/Posts/placeholder-post.html">placeholder-post</a></li></ul></div><div class="latest-reviews"><h4>Latest Course Reviews</h4><ul><li><a href="/Reviews/placeholder-review.html">placeholder-review</a></li></ul></div></article></body></html>
